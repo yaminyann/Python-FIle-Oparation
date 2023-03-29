@@ -1,0 +1,31 @@
+# dictonary basic
+identity = {'name':'yamin','age':'19','country':'bangladesh','job':'student'}
+
+# printing keys
+for i in identity.keys():
+    print(i)
+
+# printing values
+
+for i in identity.values():
+    print(i)
+
+# printing item
+
+for i in identity.items():
+    print(i)
+
+
+# dictonary convert to list
+identity = {'name':'yamin','age':'19','country':'bangladesh','job':'student'}
+
+my_key_values = list(identity.keys())
+my_data_values = list(identity.values())
+
+print(my_data_values)
+print(my_key_values)
+
+# a handy trick
+
+for i,j in identity.items():
+    print('key :'+i+ 'value : '+j)
