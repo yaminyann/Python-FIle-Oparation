@@ -1,0 +1,14 @@
+# open a file
+
+f = open('test.txt','w')
+
+
+# getting some information
+
+print('name of the file', f.name)
+print('is it closec ?', f.closed)
+print('file mode ', f.mode)
+
+
+f.write('I love python.')
+f.close()
