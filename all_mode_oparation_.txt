@@ -1,0 +1,19 @@
+# apending to the file
+
+f = open('test.txt','a')
+f.write('also java is my faborite')
+f.close()
+
+
+# Read + funtionality
+
+f = open('test.txt','r+')
+info = f.read()
+print(info)
+f.close()
+
+# w+ mode
+
+f = open('test.txt','w+')
+f.write('all information are lost . thank you.)
+f.close()
