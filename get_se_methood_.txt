@@ -1,0 +1,16 @@
+# use of in keyword
+identity = {'name':'yamin','age':'19','country':'bangladesh','job':'student'}
+print('yamin' in identity)
+print('sakib' in identity.keys())
+print('yamin' in identity.values())
+
+# get methood
+identity = {'name':'yamin','age':'19','country':'bangladesh','job':'student'}
+
+print(str(identity.get('country','default')))
+print(str(identity.get('blood','default')))
+
+# set default methood
+print(str(identity.setdefault('name','Yes available')))
+print(str(identity.setdefault('height','5 fit 10 inchi')))
+print(identity)
