@@ -1,0 +1,11 @@
+# count caracter in string
+
+import pprint as pp
+text = 'simole text to testing purpose '
+letter = {}
+
+for i in text:
+    letter.setdefault(i,0)
+    letter[i] = letter[i]+1
+
+pp.pprint(letter)
