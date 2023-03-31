@@ -1,0 +1,35 @@
+# simulates a phone book
+
+contact_no = {'yamin':4321,'sakib':3035,'nasim':3983,'rasel':8383}
+x = 0
+
+while x < 5:
+    print('enter your name (_press enter to exit_) ')
+    name = input()
+
+    if name == '':
+        break
+
+    if name in contact_no:
+        print('The contact numer of '+name + 'is '+str(contact_no[name]))
+
+    else:
+        print('Thare is no such name in contact book , Do you Want to ADD It ???')
+        disition = input()
+
+        if disition == 'yes':
+            print('enter the number :   ')
+            number = input()
+            contact_no[name]=number
+            print('Contact Update . ')
+
+        elif disition == 'no':
+            print('do you want to exit ??')
+            disition = input()
+
+            if disition == 'yes':
+                break
+            else:
+                print('keep seaching.........')
+
+    x = x+1
